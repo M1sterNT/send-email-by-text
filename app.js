@@ -2,24 +2,24 @@ const nodemailer = require('nodemailer');
 const readF = require('readline')
 
 /* Account UserName */
-var account = {
+const account = {
     user: "",
     pass: "",
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
     tls:true
-}; 
+};
 
 /* Mail Option */
-var mailOption = {
+const mailOption = {
     from: '"Mailer@Computer System Administrator Group"' + account.user, // sender address
     subject: 'CSAG 2018 Mailler', // Subject line
 };
 
 
 
-var email_List = Array()
+let email_List = []
 let lineReader = readF.createInterface({
     input: require('fs').createReadStream('email.txt')
 });
