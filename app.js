@@ -9,7 +9,7 @@ const account = {
     port: 465,
     secure: true,
     tls:true
-}; 
+};
 
 /* Mail Option */
 const mailOption = {
@@ -19,7 +19,7 @@ const mailOption = {
 
 
 
-var email_List = Array()
+let email_List = []
 let lineReader = readF.createInterface({
     input: require('fs').createReadStream('email.txt')
 });
