@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const readF = require('readline')
 
 /* Account UserName */
-var account = {
+const account = {
     user: "",
     pass: "",
     host: "smtp.gmail.com",
@@ -12,7 +12,7 @@ var account = {
 }; 
 
 /* Mail Option */
-var mailOption = {
+const mailOption = {
     from: '"Mailer@Computer System Administrator Group"' + account.user, // sender address
     subject: 'CSAG 2018 Mailler', // Subject line
 };
